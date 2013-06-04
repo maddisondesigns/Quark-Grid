@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Column & Row Setup
+   ========================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 0 0 0 1.6%;
+}
+
+/* Remove the margin on the first column. Works on all browsers incl. IE7+ */
+.col:first-child { margin-left: 0; }
+
+.row {
+	clear: both;
+	margin: 0 auto;
+	*zoom: 1;
+}
+
+.row:before, .row:after { content: ""; display: table; }
+.row:after { clear: both; }
+
+
+/* ==========================================================================
+   Six Column Grid
+   ========================================================================== */
+
+.grid_6_of_6 {	width: 100%; }
+.grid_5_of_6 { width: 83.06%; }
+.grid_4_of_6 { width: 66.13%; }
+.grid_3_of_6 { width: 49.2%; }
+.grid_2_of_6 { width: 32.26%; }
+.grid_1_of_6 { width: 15.33%; }
+
+/*  Go full width at less than 480px */
+
+@media only screen and (max-width: 480px) {
+	.grid_6_of_6,
+	.grid_5_of_6,
+	.grid_4_of_6,
+	.grid_3_of_6,
+	.grid_2_of_6,
+	.grid_1_of_6 {
+		width: 100%; 
+	}
+	.col { margin: 0; }
+}

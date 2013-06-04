@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Column & Row Setup
+   ========================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 0 0 0 1.6%;
+}
+
+/* Remove the margin on the first column. Works on all browsers incl. IE7+ */
+.col:first-child { margin-left: 0; }
+
+.row {
+	clear: both;
+	margin: 0 auto;
+	*zoom: 1;
+}
+
+.row:before, .row:after { content: ""; display: table; }
+.row:after { clear: both; }
+
+
+/* ==========================================================================
+   Eleven Column Grid
+   ========================================================================== */
+
+.grid_11_of_11 { width: 100%; }
+.grid_10_of_11 { width: 90.7%; }
+.grid_9_of_11 { width: 81.47%; }
+.grid_8_of_11 { width: 72.24%; }
+.grid_7_of_11 { width: 63.01%; }
+.grid_6_of_11 { width: 53.78%; }
+.grid_5_of_11 { width: 44.55%; }
+.grid_4_of_11 { width: 35.32%; }
+.grid_3_of_11 { width: 26.09%; }
+.grid_2_of_11 { width: 16.86%; }
+.grid_1_of_11 { width: 7.63%; }
+
+/*  Go full width at less than 480px */
+
+@media only screen and (max-width: 480px) {
+	.grid_1_of_11,
+	.grid_2_of_11,
+	.grid_3_of_11,
+	.grid_4_of_11,
+	.grid_5_of_11,
+	.grid_6_of_11,
+	.grid_7_of_11,
+	.grid_8_of_11,
+	.grid_9_of_11,
+	.grid_10_of_11,
+	.grid_11_of_11 {
+		width: 100%; 
+	}
+	.col { margin: 0; }
+}

@@ -1,0 +1,340 @@
+/* ==========================================================================
+   Quark Grid
+   ========================================================================== */
+
+/* ==========================================================================
+   Default stylings from HTML5 Boilerplate
+   ========================================================================== */
+
+/* Apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Using rem font sizing (Root em’s) with fallback to px for ie8 and below - http://snook.ca/archives/html_and_css/font-size-with-rem */
+body { margin: 0; font-size: 16px; font-size: 1rem; line-height: 1.5; }
+
+::-webkit-selection { background: #5784FE; color: #fff; text-shadow: none; }
+::-moz-selection { background: #5784FE; color: #fff; text-shadow: none; }
+::selection { background: #5784FE; color: #fff; text-shadow: none; }
+
+a { color: #333; text-decoration: underline; }
+a:visited { color: #666; }
+a:hover { color: #b40101; }
+
+menu { padding: 0; }
+
+td { vertical-align: top; }
+
+
+/* ==========================================================================
+   Basic page styles
+   ========================================================================== */
+
+body { 
+	margin: 0 auto;
+	padding: 0;
+	font: 16px/1.5 Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	color: #333;
+	text-align: left;
+}
+
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:  Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin: 0;
+	line-height: 1.3
+}
+
+h1 {
+	margin-bottom: 32px;
+	margin-bottom: 2rem;
+	font-size: 96px;
+	font-size: 6rem;
+}
+
+
+h2 {
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+	font-size: 44px;
+	font-size: 2.75rem;
+}
+
+h3 {
+
+	margin:10px 0 16px 0;
+	margin: 0.625rem 0 1rem 0;
+	font-size: 28px;
+	font-size: 1.75rem;
+}
+
+h4 {
+	color: #777;
+	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
+	font-size: 24px;
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+
+footer h4 { 
+	color: #ccc;
+}
+
+h5 { 
+	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+h6 { 
+	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 24px;
+	margin: 1.5rem;
+}
+
+ol, ul {
+	list-style: none outside none;
+}
+
+p, ol, ul, dl, address {
+	margin: 0 0 24px 0;
+	margin: 0 0 1.5rem 0;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+	margin-bottom: 0;
+}
+
+dt {
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+b, strong { 
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+em {
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
+strong em, b em {
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-weight: 700;
+}
+
+ins {
+	background: none repeat scroll 0 0 #FFF9C0;
+	text-decoration: none;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a { 
+	color: #333;
+	outline: none;
+}
+
+a:visited { 
+	color: #666;
+}
+
+a:focus { 
+	outline: thin dotted;
+	color: #2997ab;
+}
+
+a:hover, a:active { 
+	outline: 0;
+	color: #2997ab;
+}
+
+footer a {
+	color : #999;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+footer a:visited { 
+	color: #999;
+}
+
+footer a:focus { 
+	outline: thin dotted;
+	color: #fff;
+}
+
+footer a:hover, footer a:active { 
+	outline: 0;
+	color: #fff;
+}
+
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* ==========================================================================
+   Main layout
+   ========================================================================== */
+
+#skiptomain { display: none; }
+
+#wrapper {
+	width: 100%;
+	position: relative;
+	text-align: left;
+}
+
+#headcontainer {
+	width: 100%;
+}
+
+header {
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 0 10px 0;
+	position: relative;
+	color: #000;
+	text-align: center;
+}
+ 
+#maincontentcontainer {
+	width: 100%;
+}
+
+#maincontent{
+	clear: both;
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1em 0px;
+	color: #333;
+	line-height: 1.5em;
+	position: relative;
+}
+		
+#footercontainer {
+	width: 100%;	
+	background: #333;
+}
+	
+footer {
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0 10px 0;
+	color: #999;
+}
+
+.smallprint {
+	margin: 20px 0 10px 0;
+	line-height: 1.4em;
+	text-align: center;
+	color: #999;
+	font-size: 12px;
+	font-size: 0.75rem;
+	*zoom: 1;
+}
+
+.smallprint:before,
+.smallprint:after {
+	content: "";
+	display: table;
+}
+
+.smallprint:after { clear: both; }
+
+.smallprint .twitter-follow-button{
+	margin-left: 1em;
+	vertical-align: middle;
+}
+
+/* ==========================================================================
+   Non-semantic helper classes from HTML5 Boilerplate
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+/* ==========================================================================
+   Print styles from HTML5 Boilerplate
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+

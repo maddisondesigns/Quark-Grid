@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Column & Row Setup
+   ========================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 0 0 0 1.6%;
+}
+
+/* Remove the margin on the first column. Works on all browsers incl. IE7+ */
+.col:first-child { margin-left: 0; }
+
+.row {
+	clear: both;
+	margin: 0 auto;
+	*zoom: 1;
+}
+
+.row:before, .row:after { content: ""; display: table; }
+.row:after { clear: both; }
+
+
+/* ==========================================================================
+   Two Column Grid
+   ========================================================================== */
+
+.grid_2_of_2 { width: 100%; }
+.grid_1_of_2 { width: 49.2%; }
+
+/*  Go full width at less than 480px */
+
+@media only screen and (max-width: 480px) {
+	.grid_2_of_2,
+	.grid_1_of_2 {
+		width: 100%; 
+	}
+	.col { margin: 0; }
+}
